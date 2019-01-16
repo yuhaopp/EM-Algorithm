@@ -1,8 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.8.16)  8 NOV 2018 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.8.16)  16 JAN 2019 21:38
 entering extended mode
-**"C:/Users/yuhao/OneDrive/Expectatrion Maximization Algorithm/em_algorithm.tex
-"
-("C:/Users/yuhao/OneDrive/Expectatrion Maximization Algorithm/em_algorithm.tex"
+**"C:/Users/yuhao/OneDrive/my writings/EM-Algorithm/em_algorithm.tex"
+("C:/Users/yuhao/OneDrive/my writings/EM-Algorithm/em_algorithm.tex"
 LaTeX2e <2018-04-01> patch level 5
 ("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamer.cls"
 Document Class: beamer 2018/09/20 v3.54 A class for typesetting presentations
@@ -111,8 +110,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 ("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 cfg"))
-("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 ("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
 core.sty"
@@ -1056,6 +1055,427 @@ File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
 ("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
+sty"
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip69
+\enit@outerparindent=\dimen283
+\enit@toks=\toks53
+\enit@inbox=\box59
+\enitdp@description=\count181
+)
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+"
+Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
+\c@tracingmulticols=\count182
+\mult@box=\box60
+\multicol@leftmargin=\dimen284
+\c@unbalance=\count183
+\c@collectmore=\count184
+\doublecol@number=\count185
+\multicoltolerance=\count186
+\multicolpretolerance=\count187
+\full@width=\dimen285
+\page@free=\dimen286
+\premulticols=\dimen287
+\postmulticols=\dimen288
+\multicolsep=\skip70
+\multicolbaselineskip=\skip71
+\partial@page=\box61
+\last@line=\box62
+\maxbalancingoverflow=\dimen289
+\mult@rightbox=\box63
+\mult@grightbox=\box64
+\mult@gfirstbox=\box65
+\mult@firstbox=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\c@columnbadness=\count188
+\c@finalcolumnbadness=\count189
+\last@try=\dimen290
+\multicolovershoot=\dimen291
+\multicolundershoot=\dimen292
+\mult@nat@firstbox=\box84
+\colbreak@box=\box85
+\mc@col@check@num=\count190
+)
+\sympureletters=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
+ut line 20.
+ ("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\bm.sty"
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+\symboldpureletters=\mathgroup10
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen293
+))
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryshapes.code.tex"
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryshapes.geometric.code.tex"
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sh
+apes\pgflibraryshapes.geometric.code.tex"
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryshapes.misc.code.tex"
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sh
+apes\pgflibraryshapes.misc.code.tex"
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryshapes.symbols.code.tex"
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sh
+apes\pgflibraryshapes.symbols.code.tex"
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryshapes.arrows.code.tex"
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sh
+apes\pgflibraryshapes.arrows.code.tex"
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryshapes.callouts.code.tex"
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sh
+apes\pgflibraryshapes.callouts.code.tex"))
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryshapes.multipart.code.tex"
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sh
+apes\pgflibraryshapes.multipart.code.tex"
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box86
+\pgfnodeparttwobox=\box87
+\pgfnodepartthreebox=\box88
+\pgfnodepartfourbox=\box89
+\pgfnodeparttwentybox=\box90
+\pgfnodepartnineteenbox=\box91
+\pgfnodeparteighteenbox=\box92
+\pgfnodepartseventeenbox=\box93
+\pgfnodepartsixteenbox=\box94
+\pgfnodepartfifteenbox=\box95
+\pgfnodepartfourteenbox=\box96
+\pgfnodepartthirteenbox=\box97
+\pgfnodeparttwelvebox=\box98
+\pgfnodepartelevenbox=\box99
+\pgfnodeparttenbox=\box100
+\pgfnodepartninebox=\box101
+\pgfnodeparteightbox=\box102
+\pgfnodepartsevenbox=\box103
+\pgfnodepartsixbox=\box104
+\pgfnodepartfivebox=\box105
+)))
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithm2e\algori
+thm2e.sty"
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count191
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip72
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpag
+e.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count192
+)
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\relsize\relsize.st
+y"
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip73
+\skiplinenumber=\skip74
+\skiprule=\skip75
+\skiphlne=\skip76
+\skiptext=\skip77
+\skiplength=\skip78
+\algomargin=\skip79
+\skipalgocfslide=\skip80
+\algowidth=\dimen294
+\inoutsize=\dimen295
+\inoutindent=\dimen296
+\interspacetitleruled=\dimen297
+\interspacealgoruled=\dimen298
+\interspacetitleboxruled=\dimen299
+\algocf@ruledwidth=\skip81
+\algocf@inoutbox=\box106
+\algocf@inputbox=\box107
+\AlCapSkip=\skip82
+\AlCapHSkip=\skip83
+\algoskipindent=\skip84
+\algocf@nlbox=\box108
+\algocf@hangingbox=\box109
+\algocf@untilbox=\box110
+\algocf@skipuntil=\skip85
+\algocf@capbox=\box111
+\algocf@lcaptionbox=\skip86
+\algoheightruledefault=\skip87
+\algoheightrule=\skip88
+\algotitleheightruledefault=\skip89
+\algotitleheightrule=\skip90
+\c@algocfline=\count193
+\c@algocfproc=\count194
+\c@algocf=\count195
+\algocf@algoframe=\box112
+\algocf@algobox=\box113
+)
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\animate\animate.st
+y"
+Package: animate 2018/12/19 PDF & SVG animations from files and inline graphics
+
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\ifdraft.s
+ty"
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
+)
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\zref-absp
+age.sty"
+Package: zref-abspage 2016/05/21 v2.26 Module abspage for zref (HO)
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\zref-base
+.sty"
+Package: zref-base 2016/05/21 v2.26 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count196
+Package zref Info: New property: abspage on input line 62.
+)
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\media9\pdfbase.sty
+"
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+"
+Package: expl3 2018-10-17 L3 programming layer (loader) 
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-cod
+e.tex"
+Package: expl3 2018-10-17 L3 programming layer (code)
+\c_max_int=\count197
+\l_tmpa_int=\count198
+\l_tmpb_int=\count199
+\g_tmpa_int=\count266
+\g_tmpb_int=\count267
+\g__kernel_prg_map_int=\count268
+\c_log_iow=\count269
+\l_iow_line_count_int=\count270
+\l__iow_line_target_int=\count271
+\l__iow_one_indent_int=\count272
+\l__iow_indent_int=\count273
+\c_zero_dim=\dimen300
+\c_max_dim=\dimen301
+\l_tmpa_dim=\dimen302
+\l_tmpb_dim=\dimen303
+\g_tmpa_dim=\dimen304
+\g_tmpb_dim=\dimen305
+\c_zero_skip=\skip91
+\c_max_skip=\skip92
+\l_tmpa_skip=\skip93
+\l_tmpb_skip=\skip94
+\g_tmpa_skip=\skip95
+\g_tmpb_skip=\skip96
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count274
+\l__intarray_loop_int=\count275
+\c__intarray_sp_dim=\dimen306
+\g__intarray_font_int=\count276
+\c__fp_leading_shift_int=\count277
+\c__fp_middle_shift_int=\count278
+\c__fp_trailing_shift_int=\count279
+\c__fp_big_leading_shift_int=\count280
+\c__fp_big_middle_shift_int=\count281
+\c__fp_big_trailing_shift_int=\count282
+\c__fp_Bigg_leading_shift_int=\count283
+\c__fp_Bigg_middle_shift_int=\count284
+\c__fp_Bigg_trailing_shift_int=\count285
+\c__kernel_randint_max_int=\count286
+\g__fp_array_int=\count287
+\l__fp_array_loop_int=\count288
+\l__sort_length_int=\count289
+\l__sort_min_int=\count290
+\l__sort_top_int=\count291
+\l__sort_max_int=\count292
+\l__sort_true_max_int=\count293
+\l__sort_block_int=\count294
+\l__sort_begin_int=\count295
+\l__sort_end_int=\count296
+\l__sort_A_int=\count297
+\l__sort_B_int=\count298
+\l__sort_C_int=\count299
+\l__tl_analysis_normal_int=\count300
+\l__tl_analysis_index_int=\count301
+\l__tl_analysis_nesting_int=\count302
+\l__tl_analysis_type_int=\count303
+\l__regex_internal_a_int=\count304
+\l__regex_internal_b_int=\count305
+\l__regex_internal_c_int=\count306
+\l__regex_balance_int=\count307
+\l__regex_group_level_int=\count308
+\l__regex_mode_int=\count309
+\c__regex_cs_in_class_mode_int=\count310
+\c__regex_cs_mode_int=\count311
+\l__regex_catcodes_int=\count312
+\l__regex_default_catcodes_int=\count313
+\c__regex_catcode_D_int=\count314
+\c__regex_catcode_S_int=\count315
+\c__regex_catcode_L_int=\count316
+\c__regex_catcode_O_int=\count317
+\c__regex_catcode_A_int=\count318
+\c__regex_all_catcodes_int=\count319
+\l__regex_show_lines_int=\count320
+\l__regex_min_state_int=\count321
+\l__regex_max_state_int=\count322
+\l__regex_left_state_int=\count323
+\l__regex_right_state_int=\count324
+\l__regex_capturing_group_int=\count325
+\l__regex_min_pos_int=\count326
+\l__regex_max_pos_int=\count327
+\l__regex_curr_pos_int=\count328
+\l__regex_start_pos_int=\count329
+\l__regex_success_pos_int=\count330
+\l__regex_curr_char_int=\count331
+\l__regex_curr_catcode_int=\count332
+\l__regex_last_char_int=\count333
+\l__regex_case_changed_char_int=\count334
+\l__regex_curr_state_int=\count335
+\l__regex_step_int=\count336
+\l__regex_min_active_int=\count337
+\l__regex_max_active_int=\count338
+\l__regex_replacement_csnames_int=\count339
+\l__regex_match_count_int=\count340
+\l__regex_min_submatch_int=\count341
+\l__regex_submatch_int=\count342
+\l__regex_zeroth_submatch_int=\count343
+\g__regex_trace_regex_int=\count344
+\c_empty_box=\box114
+\l_tmpa_box=\box115
+\l_tmpb_box=\box116
+\g_tmpa_box=\box117
+\g_tmpb_box=\box118
+\l__box_top_dim=\dimen307
+\l__box_bottom_dim=\dimen308
+\l__box_left_dim=\dimen309
+\l__box_right_dim=\dimen310
+\l__box_top_new_dim=\dimen311
+\l__box_bottom_new_dim=\dimen312
+\l__box_left_new_dim=\dimen313
+\l__box_right_new_dim=\dimen314
+\l__box_internal_box=\box119
+\l__coffin_internal_box=\box120
+\l__coffin_internal_dim=\dimen315
+\l__coffin_offset_x_dim=\dimen316
+\l__coffin_offset_y_dim=\dimen317
+\l__coffin_x_dim=\dimen318
+\l__coffin_y_dim=\dimen319
+\l__coffin_x_prime_dim=\dimen320
+\l__coffin_y_prime_dim=\dimen321
+\c_empty_coffin=\box121
+\l__coffin_aligned_coffin=\box122
+\l__coffin_aligned_internal_coffin=\box123
+\l_tmpa_coffin=\box124
+\l_tmpb_coffin=\box125
+\l__coffin_display_coffin=\box126
+\l__coffin_display_coord_coffin=\box127
+\l__coffin_display_pole_coffin=\box128
+\l__coffin_display_offset_dim=\dimen322
+\l__coffin_display_x_dim=\dimen323
+\l__coffin_display_y_dim=\dimen324
+\g__file_internal_ior=\read2
+\l__coffin_bounding_shift_dim=\dimen325
+\l__coffin_left_corner_dim=\dimen326
+\l__coffin_right_corner_dim=\dimen327
+\l__coffin_bottom_corner_dim=\dimen328
+\l__coffin_top_corner_dim=\dimen329
+\l__coffin_scaled_total_height_dim=\dimen330
+\l__coffin_scaled_width_dim=\dimen331
+\l__seq_internal_a_int=\count345
+\l__seq_internal_b_int=\count346
+)
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode
+.def"
+File: l3pdfmode.def 2018-10-17 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count347
+))
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\l3keys2
+e\l3keys2e.sty"
+Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
+)
+Package: pdfbase 2018/06/07 v0.24 driver independent access to low-level PDF fe
+atures
+\g_pbs_page_int=\count348
+\g_pbs_oc_int=\count349
+)
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ocgx2\ocgbase.sty"
+Package: ocgbase 2018/06/07 v0.14 support package for ocgx2.sty
+\g_ocgbase_nd_int=\count350
+)
+\@anim@box=\box129
+\@anim@measbox=\box130
+\@anim@tmpdima=\dimen332
+\@anim@tmpdimb=\dimen333
+\@anim@num=\count351
+\@anim@curframe=\count352
+\@anim@curframe@zb=\count353
+\@anim@resizeflags=\count354
+\@anim@skipfram=\count355
+\@anim@mulframecnt=\count356
+\@anim@@tmlnfile=\read3
+\@anim@tmpcnt=\count357
+\c@@anim@ltxcnt=\count358
+\@anim@curlayer=\count359
+\@anim@lineno=\count360
+\@anim@curfield=\count361
+\@anim@@resizeflags=\count362
+)
 ("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamertheme-metrop
 olis\pgfplotsthemetol.sty"
 Package: pgfplotsthemetol 2017/01/23 PGFplots colors based on Paul Tol's SRON t
@@ -1063,20 +1483,20 @@ echnical note
 ) (em_algorithm.aux)
 \openout1 = `em_algorithm.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1097,12 +1517,12 @@ LaTeX Font Info:    ... okay on input line 22.
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=14.22636pt
-* \marginparwidth=3.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1116,17 +1536,17 @@ LaTeX Font Info:    ... okay on input line 22.
 ("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count181
-\scratchdimen=\dimen283
-\scratchbox=\box59
-\nofMPsegments=\count182
-\nofMParguments=\count183
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count184
-\MPscratchDim=\dimen284
-\MPnumerator=\count185
-\makeMPintoPDFobject=\count186
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count363
+\scratchdimen=\dimen334
+\scratchbox=\box131
+\nofMPsegments=\count364
+\nofMParguments=\count365
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count366
+\MPscratchDim=\dimen335
+\MPnumerator=\count367
+\makeMPintoPDFobject=\count368
+\everyMPtoPDFconversion=\toks55
 )
 ("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -1143,8 +1563,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 22.
+\AtBeginShipoutBox=\box132
+Package hyperref Info: Link coloring OFF on input line 45.
 
 ("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -1154,67 +1574,69 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count187
+\c@section@level=\count369
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
  (em_algorithm.out) (em_algorithm.out)
 \@outlinefile=\write5
 \openout5 = `em_algorithm.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 22.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 22.
-\symnumbers=\mathgroup6
-\sympureletters=\mathgroup7
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 22.
-LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 22.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 22.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 22.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 22.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 45.
+\symnumbers=\mathgroup11
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 2
-2.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 4
+5.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 
+45.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 45.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 45.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 45.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 45.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 4
+5.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-22.
+45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 22.
+ut line 45.
 
 ("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\transla
 tor-basic-dictionary-English.dict"
@@ -1244,23 +1666,250 @@ Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.16} (current compat level: 1.9).
 
 (em_algorithm.nav)
-<Tongji_University.png, id=12, 220.825pt x 221.82875pt>
-File: Tongji_University.png Graphic file (type png)
-<use Tongji_University.png>
-Package pdftex.def Info: Tongji_University.png  used on input line 24.
-(pdftex.def)             Requested size: 42.48282pt x 42.67912pt.
-
-Overfull \vbox (62.67915pt too high) detected at line 24
- []
-
-
-Overfull \vbox (13.79993pt too high) detected at line 24
+Overfull \vbox (16.67491pt too high) detected at line 49
  []
 
 [1
 
-{C:/Users/yuhao/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Tongji_Un
-iversity.png>] (em_algorithm.toc) [2
+{C:/Users/yuhao/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(em_algorithm.toc) [2
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 56.
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 56.
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 56.
+
+("C:\Users\yuhao\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sansmathaccent\ot1
+mathkerncmss.fd"
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+) [3
+
+] [4
+
+] [5
+
+]
+Overfull \hbox (20.52153pt too wide) detected at line 126
+[] [] [][] \OT1/cmss/m/n/12 = [] []
+ []
+
+[6
+
+]
+Overfull \hbox (17.56818pt too wide) detected at line 126
+[] [] [] [][] \OT1/cmss/m/n/12 = [] []
+ []
+
+[7
+
+] [8
+
+]
+<kmeans_gif/0.png, id=84, 639.38875pt x 621.32124pt>
+File: kmeans_gif/0.png Graphic file (type png)
+<use kmeans_gif/0.png>
+Package pdftex.def Info: kmeans_gif/0.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/0.png> <a0,fr0>
+<kmeans_gif/1.png, id=95, 639.38875pt x 621.32124pt>
+File: kmeans_gif/1.png Graphic file (type png)
+<use kmeans_gif/1.png>
+Package pdftex.def Info: kmeans_gif/1.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/1.png> <a0,fr1>
+<kmeans_gif/2.png, id=106, 639.38875pt x 621.32124pt>
+File: kmeans_gif/2.png Graphic file (type png)
+<use kmeans_gif/2.png>
+Package pdftex.def Info: kmeans_gif/2.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/2.png> <a0,fr2>
+<kmeans_gif/3.png, id=117, 639.38875pt x 621.32124pt>
+File: kmeans_gif/3.png Graphic file (type png)
+<use kmeans_gif/3.png>
+Package pdftex.def Info: kmeans_gif/3.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/3.png> <a0,fr3>
+<kmeans_gif/4.png, id=128, 639.38875pt x 621.32124pt>
+File: kmeans_gif/4.png Graphic file (type png)
+<use kmeans_gif/4.png>
+Package pdftex.def Info: kmeans_gif/4.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/4.png> <a0,fr4>
+<kmeans_gif/5.png, id=139, 639.38875pt x 621.32124pt>
+File: kmeans_gif/5.png Graphic file (type png)
+<use kmeans_gif/5.png>
+Package pdftex.def Info: kmeans_gif/5.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/5.png> <a0,fr5>
+<kmeans_gif/6.png, id=150, 639.38875pt x 621.32124pt>
+File: kmeans_gif/6.png Graphic file (type png)
+<use kmeans_gif/6.png>
+Package pdftex.def Info: kmeans_gif/6.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/6.png> <a0,fr6>
+<kmeans_gif/7.png, id=161, 639.38875pt x 621.32124pt>
+File: kmeans_gif/7.png Graphic file (type png)
+<use kmeans_gif/7.png>
+Package pdftex.def Info: kmeans_gif/7.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/7.png> <a0,fr7>
+<kmeans_gif/8.png, id=172, 639.38875pt x 621.32124pt>
+File: kmeans_gif/8.png Graphic file (type png)
+<use kmeans_gif/8.png>
+Package pdftex.def Info: kmeans_gif/8.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/8.png> <a0,fr8>
+<kmeans_gif/9.png, id=183, 639.38875pt x 621.32124pt>
+File: kmeans_gif/9.png Graphic file (type png)
+<use kmeans_gif/9.png>
+Package pdftex.def Info: kmeans_gif/9.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/9.png> <a0,fr9>
+<kmeans_gif/10.png, id=194, 639.38875pt x 621.32124pt>
+File: kmeans_gif/10.png Graphic file (type png)
+<use kmeans_gif/10.png>
+Package pdftex.def Info: kmeans_gif/10.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/10.png> <a0,fr10>
+<kmeans_gif/11.png, id=205, 639.38875pt x 621.32124pt>
+File: kmeans_gif/11.png Graphic file (type png)
+<use kmeans_gif/11.png>
+Package pdftex.def Info: kmeans_gif/11.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/11.png> <a0,fr11>
+<kmeans_gif/12.png, id=216, 639.38875pt x 621.32124pt>
+File: kmeans_gif/12.png Graphic file (type png)
+<use kmeans_gif/12.png>
+Package pdftex.def Info: kmeans_gif/12.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/12.png>
+<a0,fr12>
+<kmeans_gif/13.png, id=227, 639.38875pt x 621.32124pt>
+File: kmeans_gif/13.png Graphic file (type png)
+<use kmeans_gif/13.png>
+Package pdftex.def Info: kmeans_gif/13.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/13.png> <a0,fr13>
+<kmeans_gif/14.png, id=238, 639.38875pt x 621.32124pt>
+File: kmeans_gif/14.png Graphic file (type png)
+<use kmeans_gif/14.png>
+Package pdftex.def Info: kmeans_gif/14.png  used on input line 132.
+(pdftex.def)             Requested size: 639.38718pt x 621.31973pt.
+ <./kmeans_gif/14.png> <a0,fr14>
+Overfull \vbox (14.72261pt too high) detected at line 132
+ []
+
+[9
+
+]
+<pics/kmean_decision_boundaries.png, id=283, 346.79562pt x 213.29688pt>
+File: pics/kmean_decision_boundaries.png Graphic file (type png)
+<use pics/kmean_decision_boundaries.png>
+Package pdftex.def Info: pics/kmean_decision_boundaries.png  used on input line
+ 149.
+(pdftex.def)             Requested size: 199.16928pt x 122.50153pt.
+ [10
+
+ <./pics/kmean_decision_boundaries.png>]
+<pics/kmeans_generative_model_1.png, id=291, 315.1775pt x 246.42062pt>
+File: pics/kmeans_generative_model_1.png Graphic file (type png)
+<use pics/kmeans_generative_model_1.png>
+Package pdftex.def Info: pics/kmeans_generative_model_1.png  used on input line
+ 216.
+(pdftex.def)             Requested size: 170.71652pt x 133.47499pt.
+
+Overfull \hbox (5.69044pt too wide) detected at line 216
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+[11
+
+ <./pics/kmeans_generative_model_1.png>]
+<pics/kmeans_generative_model_2.png, id=298, 314.17375pt x 246.42062pt>
+File: pics/kmeans_generative_model_2.png Graphic file (type png)
+<use pics/kmeans_generative_model_2.png>
+Package pdftex.def Info: pics/kmeans_generative_model_2.png  used on input line
+ 216.
+(pdftex.def)             Requested size: 170.71652pt x 133.89987pt.
+
+Overfull \hbox (5.69044pt too wide) detected at line 216
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+[12
+
+ <./pics/kmeans_generative_model_2.png>]
+<pics/kmeans_generative_model_3.png, id=305, 318.18875pt x 249.43187pt>
+File: pics/kmeans_generative_model_3.png Graphic file (type png)
+<use pics/kmeans_generative_model_3.png>
+Package pdftex.def Info: pics/kmeans_generative_model_3.png  used on input line
+ 216.
+(pdftex.def)             Requested size: 170.71652pt x 133.82343pt.
+
+Overfull \hbox (5.69044pt too wide) detected at line 216
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+[13
+
+ <./pics/kmeans_generative_model_3.png>]
+<pics/kmeans_generative_model_4.png, id=313, 312.66812pt x 249.43187pt>
+File: pics/kmeans_generative_model_4.png Graphic file (type png)
+<use pics/kmeans_generative_model_4.png>
+Package pdftex.def Info: pics/kmeans_generative_model_4.png  used on input line
+ 216.
+(pdftex.def)             Requested size: 170.71652pt x 136.19077pt.
+
+Overfull \hbox (5.69044pt too wide) detected at line 216
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+[14
+
+ <./pics/kmeans_generative_model_4.png>]
+<pics/kmeans_generative_model_5.png, id=320, 315.67938pt x 246.9225pt>
+File: pics/kmeans_generative_model_5.png Graphic file (type png)
+<use pics/kmeans_generative_model_5.png>
+Package pdftex.def Info: pics/kmeans_generative_model_5.png  used on input line
+ 216.
+(pdftex.def)             Requested size: 170.71652pt x 133.53584pt.
+
+Overfull \hbox (5.69044pt too wide) detected at line 216
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+[15
+
+ <./pics/kmeans_generative_model_5.png>]
+<pics/kmeans_generative_model_6.png, id=327, 323.70938pt x 251.43938pt>
+File: pics/kmeans_generative_model_6.png Graphic file (type png)
+<use pics/kmeans_generative_model_6.png>
+Package pdftex.def Info: pics/kmeans_generative_model_6.png  used on input line
+ 216.
+(pdftex.def)             Requested size: 170.71652pt x 132.60233pt.
+
+Overfull \hbox (5.69044pt too wide) detected at line 216
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+
+Overfull \vbox (15.18555pt too high) detected at line 216
+ []
+
+[16
+
+ <./pics/kmeans_generative_model_6.png>] [17
+
+] [18
 
 ]
 \tf@nav=\write6
@@ -1272,30 +1921,40 @@ iversity.png>] (em_algorithm.toc) [2
 \tf@snm=\write8
 \openout8 = `em_algorithm.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
  (em_algorithm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `em_algorithm.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: A5DE4FFF0FDE5AE085C78AC7686E96A3;149.
  ) 
 Here is how much of TeX's memory you used:
- 30399 strings out of 492973
- 752931 string characters out of 3126692
- 969423 words of memory out of 3000000
- 33657 multiletter control sequences out of 15000+200000
- 6353 words of font info for 23 fonts, out of 3000000 for 9000
+ 44345 strings out of 492973
+ 1042550 string characters out of 3126692
+ 1234208 words of memory out of 3000000
+ 47398 multiletter control sequences out of 15000+200000
+ 546943 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,98p,1897b,730s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/yuhao/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmss12.pfb><C:/Users/yuhao/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmss8.pfb><C:/Users/yuhao/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/yuhao/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on em_algorithm.pdf (2 pages, 67502 bytes).
+ 71i,13n,98p,1886b,988s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\yuhao\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecso1200.pk><C:/Users/yuhao/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb><C:/Users/yuhao/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/yuhao/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/yuhao/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users
+/yuhao/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.
+pfb><C:/Users/yuhao/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmss12.pfb><C:/Users/yuhao/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmss8.pfb><C:/Users/yuhao/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/yuhao/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Users/yuhao/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/User
+s/yuhao/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb>
+Output written on em_algorithm.pdf (18 pages, 674033 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 599 words of extra memory for PDF output out of 10000 (max. 10000000)
 
