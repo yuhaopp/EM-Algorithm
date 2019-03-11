@@ -1,4 +1,4 @@
-\documentclass[11.5pt]{beamer}
+\documentclass[12pt]{beamer}
 
 \usetheme[progressbar=frametitle]{metropolis}
 \usepackage{appendixnumberbeamer}
@@ -21,6 +21,8 @@
 \usetikzlibrary{arrows,shapes}
 \usepackage[ruled]{algorithm2e}
 \usepackage{animate}
+\usepackage{hyperref}
+\usepackage{url}
 
 \setlist[itemize,1]{label=$\bullet$}
 \setlist[itemize,2]{label=$\triangleright$}
@@ -49,7 +51,7 @@
 
 \maketitle
 
-\begin{frame}{Table of contents}
+\begin{frame}{Table of contents \footnote{\scriptsize{Most of the content comes from Aarti Singh, \url{https://www.cs.cmu.edu/~epxing/Class/10701-10s/Lecture/lecture10.pdf}}}}
 \setbeamertemplate{section in toc}[sections numbered]
 \tableofcontents[hideallsubsections]
 \end{frame}
@@ -76,7 +78,7 @@
 \begin{frame}{What is K-means optimizing?}
 \begin{itemize}
 	\item Potential function $F(\bm{\mu},C)$ of centers $\bm{\mu}$ and point allocations $C$:
-	\begin{equation}
+	\begin{equation} \nonumber
 	F(\bm{\mu},C)=\sum_{j=1}^{N} \norm{\bm{\mu}_{C(j)}-\bm{x}_j}^2
 	\end{equation}
 	\item Optimal K-means:
@@ -90,7 +92,7 @@
 \tikzstyle{na} = [baseline=-.5ex]
 \begin{itemize}
 	\item Optimize potential function:
-	\begin{equation}
+	\begin{equation} \nonumber
 	\undermin{\bm{\mu}}\undermin{C}F(\bm{\mu},C)=\undermin{\bm{\mu}}\undermin{C}\sum_{i=1}^{K}\sum_{j:C(j)=i}\norm{\bm{\mu}_i-\bm{x}_i}^2
 	\end{equation}
 	\item \textcolor{red}{K-means algorithm:}
@@ -109,7 +111,7 @@
 		\only<2>{
 		\item \textcolor{red}{(2)} Fix $C$, optimize $\bm{\mu}$
 		\begin{equation} \nonumber
-		\undermin{\bm{\mu}}\sum_{i=1}^{K}\sum_{j:C(j)=i}\norm{\bm{\mu}_i-\bm{x}_j}^2=\sum_{i}^{K}
+		\undermin{\bm{\mu}}\sum_{i=1}^{K}\sum_{j:C(j)=i}\norm{\bm{\mu}_i-\bm{x}_j}^2=\sum_{i=1}^{K}
 		\tikz[baseline]{\node[fill=red!20,anchor=base,](e2){$\undermin{\bm{\mu}_i}\sum_{j:C(j)=i}\norm{\bm{\mu}_{i}-\bm{x}_j}^2$};}
 		\end{equation}
 		Exactly second step: \textcolor{red}{average of points} \tikz[na] \node[coordinate] (n2) {}; in cluster $i$
@@ -118,7 +120,7 @@
 		\end{tikzpicture}
 		}
 		\only<3>{
-		\item \textcolor{red}{(1)} Fix $\bm{\mu}$, optimize $C$ \qquad \textbf{\textcolor{red}{Expectation step}}
+		\item \textcolor{blue}{(1)} Fix $\bm{\mu}$, optimize $C$ \qquad \textbf{\textcolor{blue}{Expectation step}}
 		\item \textcolor{red}{(2)} Fix $C$, optimize $\bm{\mu}$ \qquad \textbf{\textcolor{red}{Maximization step}}
 		\item Today, we will see a generalization of this approach: \qquad \textbf{\textcolor{red}{EM algorithm}}
 		}
@@ -126,7 +128,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Iterations of K-means}
+\begin{frame}{Iterations of K-means \footnote{\scriptsize{gif source: wiki \url{https://en.wikipedia.org/wiki/K-means_clustering}}}}
 \begin{figure}
 \animategraphics[controls,width=7cm]{2}{kmeans_gif/}{0}{14}
 \end{figure}
@@ -144,14 +146,14 @@
 \begin{itemize}
 	\item \textbf{\textcolor{red}{Generative Model:}}
 
-	Assume data comes from a mixture of $K$ Gaussians distributions
+	Assume data comes from a mixture of $K$ Gaussian distributions
 	with same variance.
 \end{itemize}
 \end{frame}
 
 \begin{frame}{K-means: Generative model}
 \tikzstyle{na} = [baseline=-.5ex]
-Mixture of $K$ Gaussians distributions: (Multi-model distribution)
+Mixture of $K$ Gaussian distributions: (Multi-model distribution)
 \begin{columns}[c]
 \column{7cm}
 \begin{itemize}
@@ -180,14 +182,7 @@ Mixture of $K$ Gaussians distributions: (Multi-model distribution)
 	}
 	\only<6>{
 	\item Gaussian Bayes Classifier:
-	\begin{equation} \nonumber
-	\begin{aligned}
-	&\log \frac{P(y=i|\bm{x})}{P(y=j|\bm{x})} \\[6pt]
-	&=\log \frac{p(\bm{x}|y=i)P(y=i)}{p(\bm{x}|y=j)P(y=j)} \\[6pt]
-	&=\textcolor{red}{\bm{w}}^{T}\bm{x}
-	\end{aligned}
-	\end{equation}
-	\item \textcolor{red}{$\bm{w}$} depends on $\bm{\mu},\sigma^2,P(y)$
+	\item "Linear Decision boundary" \textcolor{red}{why?}
 	}
 \end{itemize}
 \column{6cm}
@@ -209,11 +204,28 @@ Mixture of $K$ Gaussians distributions: (Multi-model distribution)
 }
 \only<6>{
 \includegraphics[width=6cm]{pics/kmeans_generative_model_6}
-"Linear Decision boundary"
-second-order terms cancel out
 }
 \end{figure}
 \end{columns}
+\end{frame}
+
+\begin{frame}{Gaussian Bayes Classifier Decision Boundary \footnote{\scriptsize{Mengye Ren, \url{https://www.cs.toronto.edu/~urtasun/courses/CSC411/tutorial4.pdf}}}}
+\begin{itemize}
+	\item $p(\bm{x}|y=i) \sim \mathcal{N}(\bm{\mu}_i,\sigma^2\mathbf{I})$: the covariance is shared between classes,
+	\begin{small}
+	\begin{equation} \nonumber
+	\begin{aligned}
+	&P(y=i|\bm{x}) = P(y=j|\bm{x}) \\[6pt]
+	&\log \pi_{i} -\frac{1}{2}(\bm{x}-\bm{\mu}_i)^T \Sigma^{-1}(\bm{x}-\bm{\mu}_i) \\
+	=& \log \pi_{j} -\frac{1}{2}(\bm{x}-\bm{\mu}_j)^T \Sigma^{-1}(\bm{x}-\bm{\mu}_j) \\[6pt]
+	&C+\bm{x}^T\Sigma^{-1}\bm{x}-2\bm{\mu}_i^{T}\Sigma^{-1}\bm{x}+\bm{\mu}_i^{T}\Sigma^{-1}\bm{\mu}_{i} \\
+	=&C+\bm{x}^T\Sigma^{-1}\bm{x}-2\bm{\mu}_j^{T}\Sigma^{-1}\bm{x}+\bm{\mu}_j^{T}\Sigma^{-1}\bm{\mu}_{j} \\[6pt]
+	&\left[ 2(\bm{\mu}_i-\bm{\mu}_j) \right]\bm{x}-(\bm{\mu}_i-\bm{\mu}_j)^{T}\Sigma^{-1}(\bm{\mu}_i-\bm{\mu}_j)=C \\[6pt]
+	& \textcolor{red}{\Rightarrow \bm{a}^{T}\bm{x}-b=0}
+	\end{aligned}
+	\end{equation}
+	\end{small}
+\end{itemize}
 \end{frame}
 
 \begin{frame}{K-means: MLE}
@@ -271,7 +283,7 @@ second-order terms cancel out
 \end{figure}
 \column{8cm}
 \begin{itemize}
-	\item CLusters may not be linear separable
+	\item Clusters may not be linear separable
 	\item Clusters may overlap
 	\item Some clusters may be "wider" than others
 \end{itemize}
@@ -287,15 +299,15 @@ GMM-Gaussian Mixture Model (Multi-model distribution)
 	\only<1>{
 	\item There are $K$ components
 	\item Component $i$ has an associated mean vector $\bm{\mu}_i$
-	\item Each component generates data from Gaussian with mean $\bm{\mu}_i$ and covariance matrix $\Sigma_{i}$
+	\item Each component generates data from Gaussian with mean $\bm{\mu}_i$ and covariance matrix $\mathbf{\Sigma}_{i}$
 	}
 	\only<2>{
 	\item Each data is generated according to the following recipe:
 	\item (1) Pick a component at random: Choose component $i$ with probability $P(y=i)$
-	\item (2) Data point $\bm{x} \sim \mathcal{N}(\bm{\mu}_i,\Sigma_{i})$
+	\item (2) Data point $\bm{x} \sim \mathcal{N}(\bm{\mu}_i,\mathbf{\Sigma}_{i})$
 	}
 	\only<3-4>{
-	\item $p(\bm{x}|y=i)\sim \mathcal{N}(\bm{\mu}_i,\Sigma_i)$ \\[15pt]
+	\item $p(\bm{x}|y=i)\sim \mathcal{N}(\bm{\mu}_i,\mathbf{\Sigma}_i)$ \\[15pt]
 	}
 	\only<3>{
 	\item $p(\bm{x})=\sum_{i} \textcolor{red}{p(\bm{x}|y=i)} \textcolor{blue}{P(y=i)} $
@@ -306,14 +318,14 @@ GMM-Gaussian Mixture Model (Multi-model distribution)
 	}
 	\only<4>{
 	\item Gaussian Bayes Classifier:
+	\begin{small}
 	\begin{equation} \nonumber
 	\begin{aligned}
-	&\log \frac{P(y=i|\bm{x})}{P(y=j|\bm{x})} \\[6pt]
-	&=\log \frac{p(\bm{x}|y=i)P(y=i)}{p(\bm{x}|y=j)P(y=j)} \\[6pt]
-	&=\bm{x}^T\textcolor{red}{\mathbf{W}}\bm{x}+\textcolor{red}{\bm{w}}^T\bm{x}
+	&P(y=i|\bm{x}) = P(y=j|\bm{x}) \\[6pt]
+	& \textcolor{red}{\Rightarrow \bm{x}^{T}Q\bm{x}-2\bm{b}^{T}\bm{x}+b=0}
 	\end{aligned}
 	\end{equation}
-	\item \textcolor{red}{$\mathbf{W},\bm{w}$} depends on $\bm{\mu},\Sigma,P(y)$
+	\end{small}
 	}
 \end{itemize}
 
@@ -350,13 +362,13 @@ second-order terms don't cancel out
 	\begin{equation} \nonumber
 	\begin{aligned}
 	&\prod_{j=1}^{N}\sum_{i=1}^{K}P(y_j=i,\bm{x}_j)\propto \\
-	&\prod_{j=1}^{N}\sum_{i=1}^{K}P(y=i)\frac{1}{\sqrt{\det(\Sigma_i)}}\exp \left[-\frac{1}{2}(\bm{x}_j-\bm{\mu}_i)^T\Sigma_i(\bm{x}_j-\bm{\mu}_i)\right]
+	&\prod_{j=1}^{N}\sum_{i=1}^{K}P(y=i)\frac{1}{\sqrt{\det(\mathbf{\Sigma}_i)}}\exp \left[-\frac{1}{2}(\bm{x}_j-\bm{\mu}_i)^T\mathbf{\Sigma}_i(\bm{x}_j-\bm{\mu}_i)\right]
 	\end{aligned}
 	\end{equation}
-	\item How do we find the $\bm{\mu}_i$'s which give max marginal likelihood?
+	\item How do we find the $\bm{\mu}_i$'s which give max marginal likelihood? \\[6pt]
 	\begin{itemize}
-	\item Set $\frac{\partial F}{\partial \bm{\mu}_i}=0$ and solve for $\bm{\mu}_i$ 's. Non-linear non-analytically solvable.
-	\item Use gradient decent: Often slow but doable.
+		\item Set $\frac{\partial F}{\partial \bm{\mu}_i}=0$ and solve for $\bm{\mu}_i$ 's. Non-linear non-analytically solvable.
+		\item Use gradient decent: Often slow but doable.
 	\end{itemize}
 \end{itemize}
 \end{frame}
@@ -364,64 +376,319 @@ second-order terms don't cancel out
 \section{EM Algorithm}
 \begin{frame}{Expectation-Maximization (EM)}
 \begin{itemize}
-\item \textcolor{red}{EM is an optimization strategy for objective functions that can be interpreted as likelihoods in the presence missing data.}
-\item It is much simpler than gradient methods.
-\item EM is an iterative algorithm with two linked steps:
-\begin{itemize}
-\item \textcolor{red}{E-step}: fill in hidden values using inference
-\item \textcolor{red}{M-step}: apply standard MLE methods
-\end{itemize}
-\item This procedure monotonically improves the likelihood. Thus it always converges to a local optimum of the likelihood.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{EM: A simple case}
-\begin{itemize}
-\item We have unlabeled data $\bm{x}_1, \bm{x}_2, \ldots, \bm{x}_N$
-\item We know there are $K$ classes
-\item We know $P(y=1), P(y=2),\ldots,P(y=K)$
-\item We \textcolor{red}{don't} know $\bm{\mu}_1,\bm{\mu}_2,\ldots,\bm{\mu}_K$
-\item We know common variance $\sigma^2$
+	\item \textcolor{red}{EM is an optimization strategy for objective functions that can be interpreted as likelihoods in the presence missing data.}
+	\item It is much simpler than gradient methods.
+	\item EM is an iterative algorithm with two linked steps:
+	\begin{itemize}
+		\item \textcolor{blue}{E-step}: fill in hidden values using inference
+		\item \textcolor{red}{M-step}: apply standard MLE methods
+	\end{itemize}
+	\item This procedure monotonically improves the likelihood. Thus it always converges to a local optimum of the likelihood.
 \end{itemize}
 \end{frame}
 
 \begin{frame}{EM: A simple case}
 \begin{itemize}
-\item Problem formulation:
-\begin{equation} \nonumber
-\begin{aligned}
-&P(data|\bm{\mu}_1\ldots\bm{\mu}_K)\\
-=&P(\bm{x}_1\ldots\bm{x}_N|\bm{\mu}_1\ldots\bm{\mu}_K) \\
-=&\prod_{j=1}^{N}p(\bm{x}_j|\bm{\mu}_1\ldots\bm{\mu}_K) \qquad \textcolor{red}{Indepentent~data} \\
-=&\prod_{j=1}^{N}\sum_{i=1}^{K}p(\bm{x}_j|\bm{\mu}_i)P(y=i) \qquad \textcolor{red}{Marginalize~over~class} \\
-\propto&\prod_{j=1}^{N}\sum_{i=1}^{K}\exp\left( -\frac{1}{2\sigma^2}\norm{\bm{x}_j-\bm{\mu}_i}^2 \right)P(y=i)
-\end{aligned}
-\end{equation}
+	\item We have unlabeled data $\bm{x}_1, \bm{x}_2, \ldots, \bm{x}_N$
+	\item We know there are $K$ classes
+	\item We know $P(y=1), P(y=2),\ldots,P(y=K)$
+	\item We \textcolor{red}{don't} know $\bm{\mu}_1,\bm{\mu}_2,\ldots,\bm{\mu}_K$
+	\item We know common variance $\sigma^2$
 \end{itemize}
 \end{frame}
-	
+
+\begin{frame}{EM: A simple case}
+\begin{itemize}
+	\item Problem formulation:
+	\begin{equation} \nonumber
+	\begin{aligned}
+	&P(data|\bm{\mu}_1\ldots\bm{\mu}_K)\\
+	=&P(\bm{x}_1\ldots\bm{x}_N|\bm{\mu}_1\ldots\bm{\mu}_K) \\
+	=&\prod_{j=1}^{N}p(\bm{x}_j|\bm{\mu}_1\ldots\bm{\mu}_K) \qquad \textcolor{red}{Indepentent~data} \\
+	=&\prod_{j=1}^{N}\sum_{i=1}^{K}p(\bm{x}_j|\bm{\mu}_i)P(y=i) \qquad \textcolor{red}{Marginalize~over~class} \\
+	\propto&\prod_{j=1}^{N}\sum_{i=1}^{K}\exp\left( -\frac{1}{2\sigma^2}\norm{\bm{x}_j-\bm{\mu}_i}^2 \right)P(y=i)
+	\end{aligned}
+	\end{equation}
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Expectation (E) step}
 \begin{itemize}
-\item IF we know $\bm{\mu}_1,\ldots,\bm{\mu}_K$, then easily compute probability about point $\bm{x}_j$ belongs to class $y=i$
-\begin{equation} \nonumber
-P(y=i|\bm{x}_j,\bm{\mu}_1,\ldots,\bm{\mu}_K)\propto \exp\left( -\frac{1}{2\sigma^2}\norm{\bm{x}_j-\bm{\mu}_i}^2 \right)P(y=i)
-\end{equation}
+	\item If we know $\bm{\mu}_1,\ldots,\bm{\mu}_K$, then easily compute probability about point $\bm{x}_j$ belongs to class $y=i$
+	\begin{equation} \nonumber
+	P(y=i|\bm{x}_j,\bm{\mu}_1,\ldots,\bm{\mu}_K)\propto \exp\left( -\frac{1}{2\sigma^2}\norm{\bm{x}_j-\bm{\mu}_i}^2 \right)P(y=i)
+	\end{equation}
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Maximization (M) step}
 \begin{itemize}
-\item If we know probability about point $\bm{x}_j$ belongs to class $y=i$, then MLE for $\bm{\mu}_i$ is weighted average.
-\item Image multiple copies of each $\bm{x}_j$, each with weight $P(y=i|\bm{x}_j)$:
-\begin{equation} \nonumber
-\bm{\mu}_i = \frac{\sum_{j=1}^{N}P(y=i|\bm{x}_j)\bm{x}_j}{\sum_{j=1}^{N}P(y=i|\bm{x}_j)}
-\end{equation}
+	\item If we know probability about point $\bm{x}_j$ belongs to class $y=i$, then MLE for $\bm{\mu}_i$ is weighted average.
+	\item Imagine multiple copies of each $\bm{x}_j$, each with weight $P(y=i|\bm{x}_j)$:
+	\begin{equation} \nonumber
+	\bm{\mu}_i = \frac{\sum_{j=1}^{N}P(y=i|\bm{x}_j)\bm{x}_j}{\sum_{j=1}^{N}P(y=i|\bm{x}_j)}
+	\end{equation}
 \end{itemize}
-
-\begin{frmae}{EM for spherical, same variance GMMs}
-
-\end{frmae}
-
 \end{frame}
+
+\begin{frame}{EM for spherical, same variance GMMs}
+\begin{itemize}
+	\item \textcolor{blue}{E-step}
+	\begin{equation} \nonumber
+	P(y=i|\bm{x}_j,\bm{\mu}_1\ldots\bm{\mu}_K)\propto\exp\left( -\frac{1}{2\sigma^2}\norm{\bm{x}_j-\bm{\mu}_i}^2 \right) P(y=i)
+	\end{equation}
+	\begin{itemize}
+		\item Compute "expected" classes of all data points for each class
+		\item In K-means, we do hard assignment; EM dose soft assignment
+	\end{itemize}
+	\item \textcolor{red}{M-step}
+	\begin{equation} \nonumber
+	\bm{\mu}_i = \frac{\sum_{j=1}^{N}P(y=i|\bm{x}_j)\bm{x}_j}{\sum_{j=1}^{N}P(y=i|\bm{x}_j)}
+	\end{equation}
+	\begin{itemize}
+		\item Compute Max. like $\bm{\mu}$ given our data's class membership distributions.
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{EM for general GMMs}
+\begin{itemize}
+	\only<1>{
+	\item Iterate. On iteration $t$ let our estimates be
+	\begin{equation}\nonumber
+	\lambda_t = {\bm{\mu}_1^{(t)},\bm{\mu}_2^{(t)},\ldots,\bm{\mu}_K^{(t)},\mathbf{\Sigma}_{1}^{(t)},\mathbf{\Sigma}_{2}^{(t)},\ldots,\mathbf{\Sigma}_{K}^{(t)}, \textcolor{orange}{p_1^{(t)}},p_2^{(t)},\ldots,p_K^{(t)}}
+	\end{equation}
+	\begin{itemize}
+		\item \textcolor{orange}{$p_i^{(t)}$} is shorthand for estimate of $P(y=i)$
+	\end{itemize}
+	\item \textcolor{blue}{E-step}: 
+	\begin{equation} \nonumber
+	P(y=i|\bm{x}_j,\lambda_t)\propto p_{i}^{(t)}p(\bm{x}_j|\bm{\mu}_i^{(t)},\mathbf{\Sigma}_{i}^{(t)})
+	\end{equation}
+	}
+	\only<2>{
+	\item \textcolor{red}{M-step}
+	\begin{equation}\nonumber
+	\begin{aligned}
+	\bm{\mu}_i^{(t+1)} &= \frac{\sum_{j=1}^{N}P(y=i|\bm{x}_j,\lambda_t)\bm{x}_j}{\sum_{j=1}^{N}P(y=i|\bm{x}_j,\lambda_t)}\\[8pt]
+	\mathbf{\Sigma}_{i}^{(t+1)} &= \frac{\sum_j P(y=i|\bm{x}_j,\lambda_t)(\bm{x}_j-\bm{\mu}_{i}^{(t+1)})(\bm{x}_j-\bm{\mu}_{i}^{(t+1)})^T}{\sum_{j}P(y=i|\bm{x}_j,\lambda_t)} \\[8pt]
+	p_{i}^{(t+1)} &= \frac{\sum_j P(y=i|\bm{x}_j,\bm{\lambda}_t)}{N}
+	\end{aligned}
+	\end{equation}
+	}
+\end{itemize}
+\end{frame}
+\begin{frame}{EM for general GMMS: Example}
+\begin{figure}
+\only<1>{
+\includegraphics[height=0.8\textheight]{pics/em_example_1}
+\textcolor{red}{\\initialization}
+}
+\only<2>{
+\includegraphics[height=0.8\textheight]{pics/em_example_2}
+\textcolor{red}{\\After $1^{st} iteration$}
+}
+\only<3>{
+\includegraphics[height=0.8\textheight]{pics/em_example_3}
+\textcolor{red}{\\After $2^{nd} iteration$}
+}
+\only<4>{
+\includegraphics[height=0.8\textheight]{pics/em_example_4}
+\textcolor{red}{\\After $3^{rd} iteration$}
+}
+\only<5>{
+\includegraphics[height=0.8\textheight]{pics/em_example_5}
+\textcolor{red}{\\After $4^{th} iteration$}
+}
+\only<6>{
+\includegraphics[height=0.8\textheight]{pics/em_example_6}
+\textcolor{red}{\\After $5^{th} iteration$}
+}
+\only<7>{
+\includegraphics[height=0.8\textheight]{pics/em_example_7}
+\textcolor{red}{\\After $6^{th} iteration$}
+}
+\only<8>{
+\includegraphics[height=0.8\textheight]{pics/em_example_8}
+\textcolor{red}{\\After $20^{th}iteration$}
+}
+\end{figure}
+\end{frame}
+
+\begin{frame}{General EM algorithm}
+\begin{itemize}
+	\item Marginal likelihood: $\bm{x}$ is observed, $\bm{z}$ is missing:
+	\begin{equation} \nonumber
+	\begin{aligned}
+	P(\mathbf{D};\theta) &=  \log\prod_{j=1}^{N}P(\bm{x}_j|\theta) \\
+	&= \sum_{j=1}^{N} \log P(\bm{x}_j|\theta) \\
+	&= \sum_{j=1}^{N} \log\sum_{\bm{z}}P(\bm{x}_j,\bm{z}|\theta)
+	\end{aligned}
+	\end{equation}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{E-step}
+\begin{itemize}
+	\item $\bm{x}$ is observed, $\bm{z}$ is missing
+	\item Compute probability of missing data given current choice of $\theta$
+	\begin{equation} \nonumber
+	Q^{(t+1)}(\bm{z}|\bm{x}_j) = P(\bm{z}|\bm{x}_j, \theta^{(t)})
+	\end{equation}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Jensen's inequality \footnote{\scriptsize{wiki, \url{https://en.wikipedia.org/wiki/Jensen\%27s_inequality}}}}
+\begin{itemize}
+	\item For a random variable $x$, if $f(x)$ is concave, then
+	\begin{equation} \nonumber
+	f(E[x])\geqslant E[f(x)]
+	\end{equation}
+	\begin{figure}
+	\includegraphics[width=8cm]{pics/jensen_concave}
+	\end{figure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Lower-bound on marginal likelihood}
+\begin{equation}\nonumber
+\begin{aligned}
+P(\mathbf{D};\theta) &= \sum_{j=1}^{N}\log \sum_{\bm{z}}P(\bm{x}_j,\bm{z}|\theta) \\
+&= \sum_{j=1}^{N}\log \sum_{\bm{z}}Q(\bm{z}|\bm{x}_j)\frac{P(\bm{z},\bm{x}_j|\theta)}{Q(\bm{z}|\bm{x}_j)} \\
+&\geqslant \sum_{j=1}^{N} \sum_{\bm{z}}Q(\bm{z}|\bm{x}_j) \log \frac{P(\bm{z},\bm{x}_j|\theta)}{Q(\bm{z}|\bm{x}_j)} \quad \textcolor{red}{Jensen's~inequality} \\
+&= \sum_{j=1}^{N}\sum_{z}Q(\bm{z}|\bm{x}_j)\log P(\bm{z},\bm{x}_j|\theta)+\textcolor{red}{N.H(Q) ~~ entropy~of~Q}
+\end{aligned}
+\end{equation}
+\end{frame}
+
+\begin{frame}{M-step}
+\begin{equation}\nonumber
+P(\mathbf{D};\theta)\geqslant\sum_{j=1}^{N}\sum_{z}Q(\bm{z}|\bm{x}_j)\log P(\bm{z},\bm{x}_j|\theta)+N.H(Q)
+\end{equation}
+\begin{itemize}
+	\item Maximize lower bound on marginal likelihood
+\end{itemize}
+\begin{equation} \nonumber
+\theta^{(t+1)}\leftarrow\argmax{\theta}\sum_{j=1}^{N}\sum_{z}Q^{(t+1)}(\bm{z}|\bm{x}_j)\log P(\bm{z},\bm{x}_j|\theta)
+\end{equation}
+\end{frame}
+
+\begin{frame}{Convergence of EM}
+\only<1>{
+\begin{equation}\nonumber
+P(\mathbf{D};\theta) \geqslant F(\theta,Q)
+\end{equation}
+\begin{itemize}
+	\item \textcolor{red}{M-step}: Fix $Q$, maximize $F$ over $\theta$
+\end{itemize}
+\begin{equation} \nonumber
+\begin{aligned}
+P(\mathbf{D};\theta) &\geqslant F(\theta,Q^{(T)}) \\
+&= \sum_{j=1}^{N}\sum_{\bm{z}}Q^{(t)}(\bm{z}|\bm{x}_j)\log P(\bm{z},\bm{x}_j|\theta)+N.H(Q^{(t)})
+\end{aligned}
+\end{equation}
+\centering
+\textcolor{red}{Maximizes lower bound $F$ on marginal likelihood}
+}
+\only<2>{
+\begin{itemize}
+	\item \textcolor{blue}{E-step:} Fix $\theta$, maximize $F$ over Q
+\end{itemize}
+\begin{equation} \nonumber
+\begin{aligned}
+P(\mathbf{D};\theta^{(t)}) &\geqslant F(\theta^{(t)},Q) \\
+&= \sum_{j=1}^{N}\sum_{\bm{z}}Q(\bm{z}|\bm{x}_j)\log \frac{P(\bm{z},\bm{x}_j|\theta^{(t)})}{Q(\bm{z}|\bm{x}_j)} \\
+&= \sum_{j=1}^{N}\sum_{\bm{z}}Q(\bm{z}|\bm{x}_j)\log\frac{P(\bm{z}|\bm{x}_j,\theta^{(t)})P(\bm{x}_j|\theta^{(t)})}{Q(\bm{z}|\bm{x}_j)} \\
+&= \sum_{j=1}^{N}\sum_{\bm{z}}Q(\bm{z}|\bm{x}_j)\log\frac{P(\bm{z}|\bm{x}_j,\theta^{(t)})}{Q(\bm{z}|\bm{x}_j)}\textcolor{red}{~~\leftarrow KL~divergence} \\
+&+\sum_{j=1}^{N}\sum_{z}Q(\bm{z}|\bm{x}_j)\log P(\bm{x}_j|\theta^{(t)}) \textcolor{red}{~~\leftarrow P(\mathbf{D};\theta^{(t)})}
+\end{aligned}
+\end{equation}
+}
+\only<3>{
+\begin{itemize}
+	\item \textcolor{blue}{E-step:} Fix $\theta$, maximize $F$ over Q
+\end{itemize}
+\begin{equation} \nonumber
+\begin{aligned}
+P(\mathbf{D};\theta^{(t)}) &\geqslant F(\theta^{(t)},Q) \\
+&= \sum_{j=1}^{N}-KL\left(Q(\bm{z}|\bm{x}_j),P(\bm{z}|\bm{x}_j,\theta^{(t)})\right)+P(\mathbf{D};\theta^{(t)})
+\end{aligned}
+\end{equation}
+\begin{itemize}
+	\item $KL\geqslant0$ \textcolor{red}{(why?)},\ $F$ is maximized if $KL$ divergence $=0$
+	\begin{equation} \nonumber
+	KL(Q,P) = 0 ~if~  Q=P
+	\end{equation}
+	\item Recall E-step:
+	\begin{equation} \nonumber
+	Q^{(t+1)}(\bm{z}|\bm{x}_j) = P(\bm{z}|\bm{x}_j, \theta^{(t)})
+	\end{equation}
+\end{itemize}
+}
+\only<4>{
+\begin{itemize}
+	\item \textcolor{red}{M-step:} Fix $Q$, maximize $F$ over $\theta$
+\end{itemize}
+\begin{small}
+\begin{equation}\nonumber
+P(\mathbf{D};\theta)\geqslant F(\theta,Q^{(t)})=\sum_{j=1}^{N}\sum_{\bm{z}}Q^{(t)}(\bm{z}|\bm{x}_j)\log P(\bm{z},\bm{x}_j|\theta)+N.H(Q^{(t)})
+\end{equation}
+\end{small}
+\centering{
+\textcolor{red}{Maximize lower bound $F$ on marginal likelihood}
+}
+\\[20pt]
+\begin{itemize}
+	\item \textcolor{blue}{E-step:} Fix $\theta$, maximize $F$ over $Q$
+\end{itemize}
+\begin{small}
+\begin{equation} \nonumber
+P(\mathbf{D};\theta^{(t)})\geqslant F(\theta^{(t)},Q)=P(\mathbf{D};\theta^{(t)})-\sum_{j=1}^{N} KL\left( Q(\bm{z}|\bm{x}_j)||P(\bm{z}|\bm{x}_j,\theta^{(t)}) \right)
+\end{equation}
+\end{small}
+\centering{
+\textcolor{blue}{Re-aligns $F$ with marginal likelihood}
+}
+\\[10pt]
+\begin{equation} \nonumber
+F(\theta^{(t)},Q^{(t+1)})=P(\mathbf{D};\theta^{(t)})
+\end{equation}
+}
+\end{frame}
+
+\begin{frame}{Monotonic convergence of EM}
+\only<1>{
+\begin{figure}
+\includegraphics[width=10cm]{pics/convergence_1.png}
+\end{figure}
+\begin{itemize}
+	\item \textcolor{red}{EM monotonically converges to a local maximum of likelihood}
+\end{itemize}
+}
+\only<2>{
+\begin{figure}
+\includegraphics[width=10cm]{pics/convergence_2.png}
+\end{figure}
+\begin{itemize}
+	\item Different sequence of EM surrogate F-functions depending on initialization.
+	\item \textcolor{red}{Use multiple, randomized initializations in practice}
+\end{itemize}
+}
+\end{frame}
+
+\begin{frame}{Recent papers related to EM algorithm}
+\bibliographystyle{unsrt}
+\begin{thebibliography}{4}
+\bibitem{ref1} Schwartz, Boaz, Sharon Gannot, and Emanuël AP Habets. "Online speech dereverberation using Kalman filter and EM algorithm." IEEE/ACM Transactions on Audio, Speech and Language Processing (TASLP) 23.2 (2015): 394-406.
+\bibitem{ref2} Zhang, Wen, Ye Yang, and Qing Wang. "Using Bayesian regression and EM algorithm with missing handling for software effort prediction." Information and software technology 58 (2015): 58-70.
+\bibitem{ref3} Safarinejadian, Behrooz, and Kazem Hasanpour. "Distributed data clustering using mobile agents and EM algorithm." IEEE Systems Journal 10.1 (2016): 281-289.
+\end{thebibliography}
+\end{frame}
+
+{\setbeamercolor{palette primary}{fg=black, bg=yellow}
+\begin{frame}[standout]
+\Huge{Thanks!}
+\end{frame}
+}
 
 \end{document}
