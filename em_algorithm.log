@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.3)  11 MAR 2019 14:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.3)  12 MAR 2019 21:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1414,13 +1414,13 @@ Overfull \hbox (5.69044pt too wide) detected at line 210
 [16
 
  <c:/Users/yuhao/OneDrive/my writings/EM-Algorithm/pics/kmeans_generative_model_6.png>]
-Overfull \vbox (17.02055pt too high) detected at line 229
+Overfull \vbox (23.0908pt too high) detected at line 230
  []
 
 [17
 
 ]
-Overfull \vbox (6.17229pt too high) detected at line 276
+Overfull \vbox (6.17229pt too high) detected at line 277
  []
 
 [18
@@ -1433,7 +1433,7 @@ Overfull \vbox (6.17229pt too high) detected at line 276
 <pics/kmeans_bad_case.png, id=366, 158.09062pt x 260.47313pt>
 File: pics/kmeans_bad_case.png Graphic file (type png)
 <use pics/kmeans_bad_case.png>
-Package pdftex.def Info: pics/kmeans_bad_case.png  used on input line 291.
+Package pdftex.def Info: pics/kmeans_bad_case.png  used on input line 292.
 (pdftex.def)             Requested size: 85.35826pt x 140.64146pt.
  [21
 
@@ -1443,10 +1443,10 @@ Package pdftex.def Info: pics/kmeans_bad_case.png  used on input line 291.
 <pics/general_gmm_1.png, id=378, 305.14pt x 256.45813pt>
 File: pics/general_gmm_1.png Graphic file (type png)
 <use pics/general_gmm_1.png>
-Package pdftex.def Info: pics/general_gmm_1.png  used on input line 344.
+Package pdftex.def Info: pics/general_gmm_1.png  used on input line 345.
 (pdftex.def)             Requested size: 170.71652pt x 143.48642pt.
 
-Overfull \hbox (5.69044pt too wide) detected at line 344
+Overfull \hbox (5.69044pt too wide) detected at line 345
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1455,10 +1455,10 @@ Overfull \hbox (5.69044pt too wide) detected at line 344
  <c:/Users/yuhao/OneDrive/my writings/EM-Algorithm/pics/general_gmm_1.png>]
 File: pics/general_gmm_1.png Graphic file (type png)
 <use pics/general_gmm_1.png>
-Package pdftex.def Info: pics/general_gmm_1.png  used on input line 344.
+Package pdftex.def Info: pics/general_gmm_1.png  used on input line 345.
 (pdftex.def)             Requested size: 170.71652pt x 143.48642pt.
 
-Overfull \hbox (5.69044pt too wide) detected at line 344
+Overfull \hbox (5.69044pt too wide) detected at line 345
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1467,10 +1467,10 @@ Overfull \hbox (5.69044pt too wide) detected at line 344
 ]
 File: pics/general_gmm_1.png Graphic file (type png)
 <use pics/general_gmm_1.png>
-Package pdftex.def Info: pics/general_gmm_1.png  used on input line 344.
+Package pdftex.def Info: pics/general_gmm_1.png  used on input line 345.
 (pdftex.def)             Requested size: 170.71652pt x 143.48642pt.
 
-Overfull \hbox (5.69044pt too wide) detected at line 344
+Overfull \hbox (5.69044pt too wide) detected at line 345
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1480,15 +1480,15 @@ Overfull \hbox (5.69044pt too wide) detected at line 344
 <pics/general_gmm_2.png, id=397, 295.60437pt x 252.44313pt>
 File: pics/general_gmm_2.png Graphic file (type png)
 <use pics/general_gmm_2.png>
-Package pdftex.def Info: pics/general_gmm_2.png  used on input line 344.
+Package pdftex.def Info: pics/general_gmm_2.png  used on input line 345.
 (pdftex.def)             Requested size: 170.71652pt x 145.79309pt.
 
-Overfull \hbox (5.69044pt too wide) detected at line 344
+Overfull \hbox (5.69044pt too wide) detected at line 345
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 
-Overfull \vbox (19.06673pt too high) detected at line 344
+Overfull \vbox (19.06673pt too high) detected at line 345
  []
 
 [26
@@ -1496,12 +1496,12 @@ Overfull \vbox (19.06673pt too high) detected at line 344
  <c:/Users/yuhao/OneDrive/my writings/EM-Algorithm/pics/general_gmm_2.png>] [27
 
 ]
-Overfull \hbox (12.5373pt too wide) detected at line 374
+Overfull \hbox (20.58049pt too wide) detected at line 375
 [][]
  []
 
 
-Overfull \vbox (9.0556pt too high) detected at line 374
+Overfull \vbox (8.59296pt too high) detected at line 375
  []
 
 [28
@@ -1515,7 +1515,7 @@ Overfull \vbox (9.0556pt too high) detected at line 374
 ] [32
 
 ]
-Overfull \hbox (16.66368pt too wide) detected at line 422
+Overfull \hbox (16.66368pt too wide) detected at line 423
 \OT1/mathkerncmss/m/sl/12 P\OT1/cmss/m/n/12 (\OT1/mathkerncmss/m/sl/12 y \OT1/cmss/m/n/12 = \OT1/mathkerncmss/m/sl/12 i\OMS/cmsy/m/n/12 j\OT1/mathkerncmss/bx/sl/12 x[]\OML/cmm/m/it/12 ; \OML/cmm/b/it/12 ^^V[]\OML/cmm/m/it/12 ; [] ; \OML/cmm/b/it/12 ^^V[]\OT1/cmss/m/n/12 ) \OMS/cmsy/m/n/12 / [] [] \OT1/mathkerncmss/m/sl/12 P\OT1/cmss/m/n/12 (\OT1/mathkerncmss/m/sl/12 y \OT1/cmss/m/n/12 = \OT1/mathkerncmss/m/sl/12 i\OT1/cmss/m/n/12 )
  []
 
@@ -1524,14 +1524,14 @@ Overfull \hbox (16.66368pt too wide) detected at line 422
 ] [34
 
 ]
-Overfull \hbox (8.136pt too wide) detected at line 452
+Overfull \hbox (8.136pt too wide) detected at line 453
 \OT1/mathkerncmss/m/sl/12 P\OT1/cmss/m/n/12 (\OT1/mathkerncmss/m/sl/12 y \OT1/cmss/m/n/12 = \OT1/mathkerncmss/m/sl/12 i\OMS/cmsy/m/n/12 j\OT1/mathkerncmss/bx/sl/12 x[]\OML/cmm/m/it/12 ; \OML/cmm/b/it/12 ^^V[] [] ^^V[]\OT1/cmss/m/n/12 ) \OMS/cmsy/m/n/12 / [] [] \OT1/mathkerncmss/m/sl/12 P\OT1/cmss/m/n/12 (\OT1/mathkerncmss/m/sl/12 y \OT1/cmss/m/n/12 = \OT1/mathkerncmss/m/sl/12 i\OT1/cmss/m/n/12 )
  []
 
 [35
 
 ]
-Overfull \hbox (18.58762pt too wide) detected at line 480
+Overfull \hbox (18.58762pt too wide) detected at line 481
 \OML/cmm/m/it/12 ^^U[] \OT1/cmss/m/n/12 = []
  []
 
@@ -1543,10 +1543,10 @@ Overfull \hbox (18.58762pt too wide) detected at line 480
 <pics/em_example_1.png, id=461, 398.48875pt x 377.41pt>
 File: pics/em_example_1.png Graphic file (type png)
 <use pics/em_example_1.png>
-Package pdftex.def Info: pics/em_example_1.png  used on input line 516.
+Package pdftex.def Info: pics/em_example_1.png  used on input line 517.
 (pdftex.def)             Requested size: 207.14238pt x 196.18472pt.
 
-Overfull \vbox (13.43362pt too high) detected at line 516
+Overfull \vbox (13.43362pt too high) detected at line 517
  []
 
 [38
@@ -1555,10 +1555,10 @@ Overfull \vbox (13.43362pt too high) detected at line 516
 <pics/em_example_2.png, id=468, 378.91562pt x 250.43562pt>
 File: pics/em_example_2.png Graphic file (type png)
 <use pics/em_example_2.png>
-Package pdftex.def Info: pics/em_example_2.png  used on input line 516.
+Package pdftex.def Info: pics/em_example_2.png  used on input line 517.
 (pdftex.def)             Requested size: 296.8481pt x 196.18472pt.
 
-Overfull \vbox (13.43362pt too high) detected at line 516
+Overfull \vbox (13.43362pt too high) detected at line 517
  []
 
 [39
@@ -1567,10 +1567,10 @@ Overfull \vbox (13.43362pt too high) detected at line 516
 <pics/em_example_3.png, id=475, 392.46625pt x 261.47687pt>
 File: pics/em_example_3.png Graphic file (type png)
 <use pics/em_example_3.png>
-Package pdftex.def Info: pics/em_example_3.png  used on input line 516.
+Package pdftex.def Info: pics/em_example_3.png  used on input line 517.
 (pdftex.def)             Requested size: 294.46872pt x 196.18472pt.
 
-Overfull \vbox (13.43362pt too high) detected at line 516
+Overfull \vbox (13.43362pt too high) detected at line 517
  []
 
 [40
@@ -1579,10 +1579,10 @@ Overfull \vbox (13.43362pt too high) detected at line 516
 <pics/em_example_4.png, id=482, 396.98312pt x 260.975pt>
 File: pics/em_example_4.png Graphic file (type png)
 <use pics/em_example_4.png>
-Package pdftex.def Info: pics/em_example_4.png  used on input line 516.
+Package pdftex.def Info: pics/em_example_4.png  used on input line 517.
 (pdftex.def)             Requested size: 298.43321pt x 196.18472pt.
 
-Overfull \vbox (13.43362pt too high) detected at line 516
+Overfull \vbox (13.43362pt too high) detected at line 517
  []
 
 [41
@@ -1591,10 +1591,10 @@ Overfull \vbox (13.43362pt too high) detected at line 516
 <pics/em_example_5.png, id=489, 385.44pt x 258.9675pt>
 File: pics/em_example_5.png Graphic file (type png)
 <use pics/em_example_5.png>
-Package pdftex.def Info: pics/em_example_5.png  used on input line 516.
+Package pdftex.def Info: pics/em_example_5.png  used on input line 517.
 (pdftex.def)             Requested size: 292.0082pt x 196.18472pt.
 
-Overfull \vbox (13.43362pt too high) detected at line 516
+Overfull \vbox (13.43362pt too high) detected at line 517
  []
 
 [42
@@ -1603,10 +1603,10 @@ Overfull \vbox (13.43362pt too high) detected at line 516
 <pics/em_example_6.png, id=496, 378.41376pt x 264.99pt>
 File: pics/em_example_6.png Graphic file (type png)
 <use pics/em_example_6.png>
-Package pdftex.def Info: pics/em_example_6.png  used on input line 516.
+Package pdftex.def Info: pics/em_example_6.png  used on input line 517.
 (pdftex.def)             Requested size: 280.16037pt x 196.18472pt.
 
-Overfull \vbox (13.43362pt too high) detected at line 516
+Overfull \vbox (13.43362pt too high) detected at line 517
  []
 
 [43
@@ -1615,10 +1615,10 @@ Overfull \vbox (13.43362pt too high) detected at line 516
 <pics/em_example_7.png, id=504, 391.4625pt x 259.46938pt>
 File: pics/em_example_7.png Graphic file (type png)
 <use pics/em_example_7.png>
-Package pdftex.def Info: pics/em_example_7.png  used on input line 516.
+Package pdftex.def Info: pics/em_example_7.png  used on input line 517.
 (pdftex.def)             Requested size: 295.99738pt x 196.18472pt.
 
-Overfull \vbox (13.43362pt too high) detected at line 516
+Overfull \vbox (13.43362pt too high) detected at line 517
  []
 
 [44
@@ -1627,10 +1627,10 @@ Overfull \vbox (13.43362pt too high) detected at line 516
 <pics/em_example_8.png, id=511, 377.41pt x 247.92625pt>
 File: pics/em_example_8.png Graphic file (type png)
 <use pics/em_example_8.png>
-Package pdftex.def Info: pics/em_example_8.png  used on input line 516.
+Package pdftex.def Info: pics/em_example_8.png  used on input line 517.
 (pdftex.def)             Requested size: 298.64589pt x 196.18472pt.
 
-Overfull \vbox (13.43362pt too high) detected at line 516
+Overfull \vbox (13.43362pt too high) detected at line 517
  []
 
 [45
@@ -1643,16 +1643,16 @@ Overfull \vbox (13.43362pt too high) detected at line 516
 <pics/jensen_concave.png, id=529, 525.965pt x 364.86313pt>
 File: pics/jensen_concave.png Graphic file (type png)
 <use pics/jensen_concave.png>
-Package pdftex.def Info: pics/jensen_concave.png  used on input line 551.
+Package pdftex.def Info: pics/jensen_concave.png  used on input line 552.
 (pdftex.def)             Requested size: 227.62204pt x 157.90134pt.
 
-Overfull \vbox (7.04782pt too high) detected at line 551
+Overfull \vbox (7.04782pt too high) detected at line 552
  []
 
 [48
 
  <c:/Users/yuhao/OneDrive/my writings/EM-Algorithm/pics/jensen_concave.png>]
-Overfull \hbox (21.37726pt too wide) detected at line 562
+Overfull \hbox (21.37726pt too wide) detected at line 563
 [][]
  []
 
@@ -1663,12 +1663,12 @@ Overfull \hbox (21.37726pt too wide) detected at line 562
 ] [51
 
 ]
-Overfull \hbox (11.91045pt too wide) detected at line 657
+Overfull \hbox (11.91045pt too wide) detected at line 658
 [][]
  []
 
 
-Overfull \vbox (10.0057pt too high) detected at line 657
+Overfull \vbox (10.0057pt too high) detected at line 658
  []
 
 [52
@@ -1676,17 +1676,17 @@ Overfull \vbox (10.0057pt too high) detected at line 657
 ] [53
 
 ]
-Overfull \hbox (4.50368pt too wide) detected at line 657
+Overfull \hbox (4.50368pt too wide) detected at line 658
 \OT1/mathkerncmss/m/sl/10.95 P\OT1/cmss/m/n/10.95 (\OT1/cmss/bx/n/10.95 D\OT1/cmss/m/n/10.95 ; \OML/cmm/m/it/10.95 ^^R\OT1/cmss/m/n/10.95 ) \U/msa/m/n/10.95 > \OT1/mathkerncmss/m/sl/10.95 F\OT1/cmss/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R; \OT1/mathkerncmss/m/sl/10.95 Q[]\OT1/cmss/m/n/10.95 ) = [] [] \OT1/mathkerncmss/m/sl/10.95 Q[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/bx/sl/10.95 z\OMS/cmsy/m/n/10.95 j\OT1/mathkerncmss/bx/sl/10.95 x[]\OT1/cmss/m/n/10.95 ) [] \OT1/mathkerncmss/m/sl/10.95 P\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/bx/sl/10.95 z\OML/cmm/m/it/10.95 ; \OT1/mathkerncmss/bx/sl/10.95 x[]\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 ^^R\OT1/cmss/m/n/10.95 ) + \OT1/mathkerncmss/m/sl/10.95 N\OML/cmm/m/it/10.95 :\OT1/mathkerncmss/m/sl/10.95 H\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 Q[]\OT1/cmss/m/n/10.95 )
  []
 
 
-Overfull \hbox (12.46458pt too wide) detected at line 657
+Overfull \hbox (12.46458pt too wide) detected at line 658
 \OT1/mathkerncmss/m/sl/10.95 P\OT1/cmss/m/n/10.95 (\OT1/cmss/bx/n/10.95 D\OT1/cmss/m/n/10.95 ; \OML/cmm/m/it/10.95 ^^R[]\OT1/cmss/m/n/10.95 ) \U/msa/m/n/10.95 > \OT1/mathkerncmss/m/sl/10.95 F\OT1/cmss/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R[]; \OT1/mathkerncmss/m/sl/10.95 Q\OT1/cmss/m/n/10.95 ) = \OT1/mathkerncmss/m/sl/10.95 P\OT1/cmss/m/n/10.95 (\OT1/cmss/bx/n/10.95 D\OT1/cmss/m/n/10.95 ; \OML/cmm/m/it/10.95 ^^R[]\OT1/cmss/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ [] \OT1/mathkerncmss/m/sl/10.95 KL []
  []
 
 
-Overfull \vbox (13.6186pt too high) detected at line 657
+Overfull \vbox (13.6186pt too high) detected at line 658
  []
 
 [54
@@ -1695,7 +1695,7 @@ Overfull \vbox (13.6186pt too high) detected at line 657
 <pics/convergence_1.png, id=570, 412.54124pt x 170.6375pt>
 File: pics/convergence_1.png Graphic file (type png)
 <use pics/convergence_1.png>
-Package pdftex.def Info: pics/convergence_1.png  used on input line 677.
+Package pdftex.def Info: pics/convergence_1.png  used on input line 678.
 (pdftex.def)             Requested size: 284.52756pt x 117.68791pt.
  [55
 
@@ -1703,12 +1703,12 @@ Package pdftex.def Info: pics/convergence_1.png  used on input line 677.
 <pics/convergence_2.png, id=578, 445.16313pt x 199.74625pt>
 File: pics/convergence_2.png Graphic file (type png)
 <use pics/convergence_2.png>
-Package pdftex.def Info: pics/convergence_2.png  used on input line 677.
+Package pdftex.def Info: pics/convergence_2.png  used on input line 678.
 (pdftex.def)             Requested size: 284.52756pt x 127.66953pt.
  [56
 
  <c:/Users/yuhao/OneDrive/my writings/EM-Algorithm/pics/convergence_2.png>]
-Overfull \vbox (20.19756pt too high) detected at line 686
+Overfull \vbox (20.19756pt too high) detected at line 687
  []
 
 [57
@@ -1725,24 +1725,24 @@ Overfull \vbox (20.19756pt too high) detected at line 686
 \tf@snm=\write8
 \openout8 = `em_algorithm.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 694.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 694.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 695.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 695.
  (c:/Users/yuhao/OneDrive/my writings/EM-Algorithm/em_algorithm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 694.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 694.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 695.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 695.
 Package rerunfilecheck Info: File `em_algorithm.out' has not changed.
 (rerunfilecheck)             Checksum: 5341FDF93BB8DE6255A5119CBFD9C4FA;146.
  ) 
 Here is how much of TeX's memory you used:
- 45316 strings out of 492616
- 1049086 string characters out of 6132769
+ 45318 strings out of 492616
+ 1049113 string characters out of 6132769
  1248908 words of memory out of 5000000
- 48297 multiletter control sequences out of 15000+600000
+ 48299 multiletter control sequences out of 15000+600000
  565513 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,98p,1886b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,13n,98p,1886b,1052s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfso0800.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfso1000.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfso1200.pfb>
-Output written on "c:/Users/yuhao/OneDrive/my writings/EM-Algorithm/em_algorithm.pdf" (58 pages, 1273318 bytes).
+Output written on "c:/Users/yuhao/OneDrive/my writings/EM-Algorithm/em_algorithm.pdf" (58 pages, 1275684 bytes).
 PDF statistics:
  701 PDF objects out of 1000 (max. 8388607)
  461 compressed objects within 5 object streams

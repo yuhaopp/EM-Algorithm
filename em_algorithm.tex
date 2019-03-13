@@ -95,15 +95,15 @@
 	\begin{equation} \nonumber
 	\undermin{\bm{\mu}}\undermin{C}F(\bm{\mu},C)=\undermin{\bm{\mu}}\undermin{C}\sum_{i=1}^{K}\sum_{j:C(j)=i}\norm{\bm{\mu}_i-\bm{x}_i}^2
 	\end{equation}
-	\item \textcolor{red}{K-means algorithm:}
+	\item K-means algorithm:
 	\begin{itemize}
 		\only<1>{
-		\item \textcolor{red}{(1)} Fix $\bm{\mu}$, optimize $C$
+		\item \textcolor{blue}{(1)} Fix $\bm{\mu}$, optimize $C$
 		\begin{equation} \nonumber
 		\undermin{C}\sum_{j=1}^{N}\norm{\bm{\mu}_{C(j)}-x_j}^2=\sum_{j=1}^{N}
-		\tikz[baseline]{\node[fill=red!20,anchor=base,ellipse](e1){$\undermin{C(j)}\norm{\bm{\mu}_{C(j)}-\bm{x}_j}^2$};}
+		\tikz[baseline]{\node[fill=blue!20,anchor=base,ellipse](e1){$\undermin{C(j)}\norm{\bm{\mu}_{C(j)}-\bm{x}_j}^2$};}
 		\end{equation}
-		Exactly first step: assign each point to the \textcolor{red}{nearest} \tikz[na] \node[coordinate] (n1) {}; cluster center
+		Exactly first step: assign each point to the \textcolor{blue}{nearest} \tikz[na] \node[coordinate] (n1) {}; cluster center
 		\begin{tikzpicture}[overlay]
 		\path[->]<1-> (n1) edge [bend right] (e1);
 		\end{tikzpicture}
@@ -122,7 +122,7 @@
 		\only<3>{
 		\item \textcolor{blue}{(1)} Fix $\bm{\mu}$, optimize $C$ \qquad \textbf{\textcolor{blue}{Expectation step}}
 		\item \textcolor{red}{(2)} Fix $C$, optimize $\bm{\mu}$ \qquad \textbf{\textcolor{red}{Maximization step}}
-		\item Today, we will see a generalization of this approach: \qquad \textbf{\textcolor{red}{EM algorithm}}
+		\item Today, we will see a generalization of this approach: \qquad \textbf{EM algorithm}
 		}
 	\end{itemize}
 \end{itemize}
@@ -219,9 +219,10 @@ Mixture of $K$ Gaussian distributions: (Multi-model distribution)
 	&\log \pi_{i} -\frac{1}{2}(\bm{x}-\bm{\mu}_i)^T \Sigma^{-1}(\bm{x}-\bm{\mu}_i) \\
 	=& \log \pi_{j} -\frac{1}{2}(\bm{x}-\bm{\mu}_j)^T \Sigma^{-1}(\bm{x}-\bm{\mu}_j) \\[6pt]
 	&C+\bm{x}^T\Sigma^{-1}\bm{x}-2\bm{\mu}_i^{T}\Sigma^{-1}\bm{x}+\bm{\mu}_i^{T}\Sigma^{-1}\bm{\mu}_{i} \\
-	=&C+\bm{x}^T\Sigma^{-1}\bm{x}-2\bm{\mu}_j^{T}\Sigma^{-1}\bm{x}+\bm{\mu}_j^{T}\Sigma^{-1}\bm{\mu}_{j} \\[6pt]
-	&\left[ 2(\bm{\mu}_i-\bm{\mu}_j) \right]\bm{x}-(\bm{\mu}_i-\bm{\mu}_j)^{T}\Sigma^{-1}(\bm{\mu}_i-\bm{\mu}_j)=C \\[6pt]
+	~~=&\bm{x}^T\Sigma^{-1}\bm{x}-2\bm{\mu}_j^{T}\Sigma^{-1}\bm{x}+\bm{\mu}_j^{T}\Sigma^{-1}\bm{\mu}_{j} \\[6pt]
+	&\left[ 2(\bm{\mu}_i-\bm{\mu}_j)^T \Sigma^{-1} \right]\bm{x}-(\bm{\mu}_i+\bm{\mu}_j)^{T}\Sigma^{-1}(\bm{\mu}_i-\bm{\mu}_j)=C \\[6pt]
 	& \textcolor{red}{\Rightarrow \bm{a}^{T}\bm{x}-b=0}
+	% Here a wrong typing is corrected. (\mu_i+\mu_j)\Sigma(\mu_i-\mu_j), pay attention to the + and -
 	\end{aligned}
 	\end{equation}
 	\end{small}
@@ -362,12 +363,12 @@ second-order terms don't cancel out
 	\begin{equation} \nonumber
 	\begin{aligned}
 	&\prod_{j=1}^{N}\sum_{i=1}^{K}P(y_j=i,\bm{x}_j)\propto \\
-	&\prod_{j=1}^{N}\sum_{i=1}^{K}P(y=i)\frac{1}{\sqrt{\det(\mathbf{\Sigma}_i)}}\exp \left[-\frac{1}{2}(\bm{x}_j-\bm{\mu}_i)^T\mathbf{\Sigma}_i(\bm{x}_j-\bm{\mu}_i)\right]
+	&\prod_{j=1}^{N}\sum_{i=1}^{K}P(y=i)\frac{1}{\sqrt{\det(\mathbf{\Sigma}_i)}}\exp \left[-\frac{1}{2}(\bm{x}_j-\bm{\mu}_i)^T\mathbf{\Sigma}_i^{-1}(\bm{x}_j-\bm{\mu}_i)\right]
 	\end{aligned}
 	\end{equation}
 	\item How do we find the $\bm{\mu}_i$'s which give max marginal likelihood? \\[6pt]
 	\begin{itemize}
-		\item Set $\frac{\partial F}{\partial \bm{\mu}_i}=0$ and solve for $\bm{\mu}_i$ 's. Non-linear non-analytically solvable.
+		\item Set $\frac{\partial F}{\partial \bm{\mu}_i}=0$ and solve for $\bm{\mu}_i$ 's. Non-linear non-analytically solvable. \small{($\mathbf{\Sigma}_i$ has the same problem)}
 		\item Use gradient decent: Often slow but doable.
 	\end{itemize}
 \end{itemize}
@@ -376,7 +377,7 @@ second-order terms don't cancel out
 \section{EM Algorithm}
 \begin{frame}{Expectation-Maximization (EM)}
 \begin{itemize}
-	\item \textcolor{red}{EM is an optimization strategy for objective functions that can be interpreted as likelihoods in the presence missing data.}
+	\item \textcolor{red}{EM is an optimization strategy for objective functions that can be interpreted as likelihoods in the presence of missing data.}
 	\item It is much simpler than gradient methods.
 	\item EM is an iterative algorithm with two linked steps:
 	\begin{itemize}
@@ -472,7 +473,7 @@ second-order terms don't cancel out
 	\begin{aligned}
 	\bm{\mu}_i^{(t+1)} &= \frac{\sum_{j=1}^{N}P(y=i|\bm{x}_j,\lambda_t)\bm{x}_j}{\sum_{j=1}^{N}P(y=i|\bm{x}_j,\lambda_t)}\\[8pt]
 	\mathbf{\Sigma}_{i}^{(t+1)} &= \frac{\sum_j P(y=i|\bm{x}_j,\lambda_t)(\bm{x}_j-\bm{\mu}_{i}^{(t+1)})(\bm{x}_j-\bm{\mu}_{i}^{(t+1)})^T}{\sum_{j}P(y=i|\bm{x}_j,\lambda_t)} \\[8pt]
-	p_{i}^{(t+1)} &= \frac{\sum_j P(y=i|\bm{x}_j,\bm{\lambda}_t)}{N}
+	p_{i}^{(t+1)} &= \frac{\sum_j P(y=i|\bm{x}_j,\lambda_t)}{N}
 	\end{aligned}
 	\end{equation}
 	}
@@ -676,18 +677,18 @@ F(\theta^{(t)},Q^{(t+1)})=P(\mathbf{D};\theta^{(t)})
 }
 \end{frame}
 
-\begin{frame}{Recent papers related to EM algorithm}
+\begin{frame}{Recent research papers on EM algorithm}
 \bibliographystyle{unsrt}
 \begin{thebibliography}{4}
-\bibitem{ref3} Balakrishnan, Sivaraman, Martin J. Wainwright, and Bin Yu. "Statistical guarantees for the EM algorithm: From population to sample-based analysis." The Annals of Statistics 45.1 (2017): 77-120.
-\bibitem{ref1} Schwartz, Boaz, Sharon Gannot, and Emanuël AP Habets. "Online speech dereverberation using Kalman filter and EM algorithm." IEEE/ACM Transactions on Audio, Speech and Language Processing (TASLP) 23.2 (2015): 394-406.
-\bibitem{ref2} Zhang, Wen, Ye Yang, and Qing Wang. "Using Bayesian regression and EM algorithm with missing handling for software effort prediction." Information and software technology 58 (2015): 58-70.
+\bibitem{ref3} Balakrishnan, Sivaraman, Martin J. Wainwright, and Bin Yu. "\textbf{Statistical guarantees for the EM algorithm: From population to sample-based analysis.}" The Annals of Statistics 45.1 (2017): 77-120.
+\bibitem{ref1} Schwartz, Boaz, Sharon Gannot, and Emanuël AP Habets. "\textbf{Online speech dereverberation using Kalman filter and EM algorithm.}" IEEE/ACM Transactions on Audio, Speech and Language Processing (TASLP) 23.2 (2015): 394-406.
+\bibitem{ref2} Zhang, Wen, Ye Yang, and Qing Wang. "\textbf{Using Bayesian regression and EM algorithm with missing handling for software effort prediction.}" Information and software technology 58 (2015): 58-70.
 \end{thebibliography}
 \end{frame}
 
 {\setbeamercolor{palette primary}{fg=black, bg=yellow}
 \begin{frame}[standout]
-\Huge{Thanks!}
+\Huge{Thanks}
 \end{frame}
 }
 
